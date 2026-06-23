@@ -1,0 +1,61 @@
+.hero-ribbon-container {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  pointer-events: none;
+  z-index: 0;
+}
+
+.hero-ribbon-svg {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+/* Base styling for the ribbon */
+.animated-ribbon {
+  stroke-dasharray: 4000;
+  stroke-dashoffset: 4000;
+  animation: flowRibbon 12s cubic-bezier(0.4, 0, 0.2, 1) forwards infinite alternate;
+}
+
+.animated-ribbon-highlight {
+  stroke-dasharray: 4000;
+  stroke-dashoffset: 4000;
+  animation: flowRibbon 12s cubic-bezier(0.4, 0, 0.2, 1) forwards infinite alternate;
+}
+
+@keyframes flowRibbon {
+  0% {
+    stroke-dashoffset: 4000;
+  }
+  100% {
+    stroke-dashoffset: 0;
+  }
+}
+
+/* Subtle portal floating animation */
+.portal {
+  transform-origin: center;
+}
+
+.portal-left {
+  animation: floatPortal 8s ease-in-out infinite alternate;
+}
+
+.portal-right {
+  animation: floatPortal 10s ease-in-out infinite alternate-reverse;
+}
+
+@keyframes floatPortal {
+  0% {
+    transform: translateY(0) scale(1);
+  }
+  100% {
+    transform: translateY(-15px) scale(1.05);
+  }
+}

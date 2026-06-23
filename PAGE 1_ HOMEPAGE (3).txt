@@ -1,0 +1,84 @@
+ORZEH TECHNOLOGIES
+Website Content  ·  Page 1: Homepage
+ 
+SEO METADATA
+Meta title: Orzeh Technologies | AI Security, Data Engineering & ERP + AI Solutions
+Meta description: Orzeh Technologies builds secure, production-ready AI systems for growing companies: AI security and Wazuh monitoring, data engineering and DevSecOps, and Odoo ERP with custom AI.
+ 
+HERO SECTION
+Production-Ready AI Infrastructure for Growing Companies
+Orzeh Technologies helps businesses move past fragmented tools, manual workflows, and experimental AI. We secure AI products, build the data infrastructure behind them, and modernize operations with ERP systems that run on custom AI.
+CTA  Book a Consultation   ·   See What We Build
+Trust line:  AI Security  ·  Data Engineering  ·  DevSecOps  ·  ERP + AI
+ 
+SECTION 2
+We Build the Systems That Make AI Work
+AI has moved out of the experiment phase. It now sits inside product development, operations, customer experience, reporting, and the decisions leadership makes every day. The catch is that AI built on a weak foundation tends to break: it gets fragile, hard to secure, and disconnected from how the business actually runs.
+That foundation is what we build. We secure AI systems before they reach production, engineer data infrastructure that can carry real workloads, and implement ERP that turns manual processes into connected, AI-assisted operations. The work is hands-on and ends in systems your team can run, not a strategy deck.
+There is a real difference between experimenting with AI and operating with it. The shift happens when your systems become more secure, better connected, and more reliable at once, when automation takes over the work people used to do by hand and leadership can finally see what is happening as it happens. That transition is the part most companies get wrong, and helping you get it right is the whole point of what we do.
+ 
+SECTION 3
+One Technical Partner. Three Capabilities.
+Every company comes to AI from a different starting point. One team is shipping an AI product that needs securing. Others have data scattered across a dozen systems with no reliable pipeline. Plenty are still running operations out of spreadsheets. We start wherever the pressure is highest and build out from there.
+01. AI Security & Implementation
+Secure Your AI Before It Becomes a Risk
+AI systems open up a category of risk that traditional tools miss: prompt injection, model extraction, training-data poisoning, data leakage, and outputs nobody is monitoring. We help technical teams find those gaps, harden the architecture, and get the system ready for real-world deployment.
+What we build: AI security audits; Wazuh deployment and threat monitoring; DevSecOps for AI pipelines; RAG and groundedness work to cut hallucinations; production-readiness reviews.
+Best for: AI startups, ML engineers, technical founders, and DevOps teams putting AI into production.
+CTA  Explore AI Security
+02. Data Engineering & DevSecOps
+Build the Data Foundation Your AI Depends On
+A model rarely fails on its own. It fails when the data feeding it is slow, messy, or stale. We build data infrastructure for teams that need clean pipelines, real-time visibility, and deployment workflows that hold up under load, with security built into the process instead of bolted on afterward.
+What we build: data pipelines for AI and analytics; real-time and micro-batch infrastructure; cloud and multi-cloud architecture; CI/CD and monitoring for AI systems; DevSecOps integration.
+Best for: data teams, AI product teams, and growing companies scaling analytics and automation.
+CTA  Explore Data Infrastructure
+03. ERP + AI Solutions
+Modern Operations Take More Than Software
+For most businesses, the first problem is not AI. It is operations. Spreadsheets, disconnected tools, manual reporting, and inventory counts that are always a little wrong make growth harder than it should be. We implement Odoo ERP and add custom AI on top, so the system starts predicting and automating rather than just recording.
+What we build: Odoo implementation, customization, and migration; AI inventory prediction; automated workflows and smart reporting; CRM and sales automation; training and support.
+Best for: SMBs, retail, distribution, and manufacturing teams modernizing operations.
+CTA  Explore ERP + AI
+ 
+SECTION 4
+Your Business Can't Scale on Broken Systems
+Growth has a way of exposing whatever is weak underneath. A setup that runs fine with five people gets messy at twenty. Spreadsheets that felt manageable become a liability at scale. An AI prototype that impressed everyone in a demo turns into a risk once it is live, and a simple data setup buckles the first time it meets real demand.
+The symptoms are familiar. Teams repeat the same manual work week after week, data lives in too many places to trust, and the AI runs without anyone able to say how secure it is. Operations depend on people remembering the process, and decisions get made from reports that were already out of date when they landed. We rebuild the systems underneath, so growth gets easier to manage instead of harder.
+ 
+SECTION 5
+We Start With How Your Business Actually Works
+Most AI conversations open with tools. Ours opens with the business. Before we recommend a model, a pipeline, an ERP module, or an automation layer, we look at how your company runs day to day: where time leaks out, where data breaks down, where risk is quietly building, and where automation would actually pay off. The system gets designed around that reality, not around a template. The goal is infrastructure that ships and runs, not a deck that sits in a drive.
+ 
+SECTION 6
+From Diagnosis to Deployment
+01. Diagnose: We start with your current systems, workflows, and the bottlenecks slowing you down.
+02. Architect: We map the right path forward: security, data infrastructure, ERP, AI automation, or some combination of them.
+03. Build: We implement with real engineering and clean documentation, built for production from the start.
+04. Deploy: We move it into your live environment with monitoring, team training, and a proper handover.
+05. Optimize: We keep improving the system as your team grows and your data becomes more valuable.
+ 
+SECTION 7
+Who We Work With
+Orzeh is built for companies moving from scattered systems to something more structured:
+• AI startups and founders putting AI products into production
+• DevOps and data teams responsible for AI deployment and infrastructure
+• SMBs replacing spreadsheets and manual processes
+• Manufacturing and distribution companies modernizing operations
+• Leadership teams that want practical results rather than vague advice
+ 
+SECTION 8
+A Technical Partner for the Next Stage
+You don't need five vendors to modernize a company. You need one partner who understands how AI, data, security, and operations fit together: AI systems that are safer to deploy, data infrastructure ready to scale, ERP that centralizes operations, and security practices that lower your risk across all of it.
+ 
+SECTION 9
+Start With the System, Not the Software
+The first move isn't picking a tool. It is understanding what your business needs to run better. In a short consultation, we review your current systems, pinpoint the gap with the highest impact, and recommend a practical place to start, whether that is AI security, data infrastructure, ERP, or a combination handled over time.
+CTA  Book a Consultation
+A focused conversation about your systems, your risks, and what to build first.
+ 
+FINAL CTA
+Build the Infrastructure Your Business Will Depend On
+Secure the AI you are building, scale the data behind it, and modernize the operations that keep everything running. We will help you decide what comes first.
+CTA  Schedule a Consultation   ·   Explore Our Services
+ 
+SUGGESTED NAVIGATION
+Home  ·  AI Security  ·  Data Engineering  ·  ERP + AI  ·  Case Studies  ·  Resources  ·  About  ·  Contact
