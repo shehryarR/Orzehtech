@@ -57,14 +57,19 @@ function BookConsultation() {
     setIsSubmitting(true);
     
     try {
-      // Formspree Integration Endpoint
-      const response = await fetch('https://formspree.io/f/mzdwwraz', {
+      // Web3Forms Integration Endpoint
+      const response = await fetch('https://api.web3forms.com/submit', {
         method: 'POST',
         headers: {
           'Accept': 'application/json',
           'Content-Type': 'application/json'
         },
-        body: JSON.stringify(formData)
+        body: JSON.stringify({
+          access_key: '6b2d3e0b-3986-4dc3-94e7-c1e5c77621d9',
+          subject: 'New Consultation Request - Orzeh Technologies',
+          from_name: 'Orzeh Landing Pages',
+          ...formData
+        })
       });
 
       if (response.ok) {

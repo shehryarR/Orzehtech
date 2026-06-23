@@ -77,6 +77,38 @@ npm run build
 
 The compiled assets will be written to the `dist/` directory, which can be deployed to static hosting providers such as Netlify, Vercel, or AWS S3.
 
+## Environment Variables
+
+This project currently **does not require any environment variables** to run. All configuration values (company name, email, phone, etc.) are stored in [`src/config.js`](src/config.js).
+
+If you need to add environment variables in the future, create a `.env` file in the project root:
+
+```bash
+# .env (example — not currently required)
+VITE_API_URL=https://api.example.com
+VITE_ANALYTICS_ID=UA-XXXXXXXXX
+```
+
+> **Note:** Vite requires all client-side environment variables to be prefixed with `VITE_`. Access them in code via `import.meta.env.VITE_YOUR_VAR`.
+
+### Currently Required Variables
+
+| Variable | Required | Default | Description |
+|----------|----------|---------|-------------|
+| — | — | — | No environment variables are required at this time. |
+
+### Static Configuration
+
+All site-level configuration is managed in `src/config.js`:
+
+| Key | Value | Description |
+|-----|-------|-------------|
+| `companyName` | `Orzeh Technologies` | Company display name |
+| `email` | `hello@orzeh.com` | Contact email address |
+| `phone` | `+1 (800) 555-0199` | Contact phone number |
+| `address` | `Orzeh Technologies Inc.` | Company address |
+| `calendarLink` | `#book-consultation` | Calendar booking URL |
+
 ## Utility Scripts
 
 The `scripts/` directory contains tools used for content processing and asset preparation:
