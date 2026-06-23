@@ -695,7 +695,7 @@ function ServicesOverview() {
             {/* Center Content Panel */}
             <div className="integrations-center-panel">
               <div className="integrations-brand-badge" onClick={() => setHoveredNode(null)}>
-                <img src="/logo.png" alt="Orzeh Logo" className="integrations-brand-logo" />
+                <img src="/images/logo.png" alt="Orzeh Logo" className="integrations-brand-logo" />
               </div>
               <h3 className="integrations-center-title">Powerful Alone</h3>
 

@@ -114,7 +114,7 @@ function About() {
 
             {/* Right Hero Visual */}
             <div className="lg:col-span-6 relative flex items-center justify-center w-full max-lg:mt-12 animate-on-scroll animate-from-right" data-delay="200">
-              <img src="/team_collaboration.png" alt="Engineering Team Collaboration" className="w-full h-auto object-cover rounded-[2rem] shadow-[0_20px_50px_-15px_rgba(0,0,0,0.1)] hover:scale-[1.02] transition-transform duration-700 ease-out" />
+              <img src="/images/team_collaboration.png" alt="Engineering Team Collaboration" className="w-full h-auto object-cover rounded-[2rem] shadow-[0_20px_50px_-15px_rgba(0,0,0,0.1)] hover:scale-[1.02] transition-transform duration-700 ease-out" />
             </div>
 
           </div>
@@ -129,7 +129,7 @@ function About() {
             {/* Left Image Side */}
             <div className="relative rounded-[2rem] overflow-hidden shadow-2xl h-[500px] group animate-on-scroll animate-from-left">
               <div className="absolute inset-0 bg-slate-900/10 group-hover:bg-transparent transition-colors duration-500 z-10" />
-              <img src="/tech_leadership.png" alt="Tech Leadership Discussion" className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-1000 ease-out" />
+              <img src="/images/tech_leadership.png" alt="Tech Leadership Discussion" className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-1000 ease-out" />
               
               {/* Glass overlay text */}
               <div className="absolute bottom-6 left-6 right-6 p-6 bg-white/10 backdrop-blur-xl border border-white/20 rounded-2xl z-20">

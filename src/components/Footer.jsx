@@ -13,7 +13,7 @@ function Footer() {
           <div className="footer-brand-col animate-on-scroll animate-from-left">
             <div className="footer-logo-wrap">
               <img 
-                src="/logo.png" 
+                src="/images/logo.png" 
                 alt="Orzeh Logo" 
                 className="footer-logo" 
               />

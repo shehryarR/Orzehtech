@@ -54,7 +54,7 @@ function Navbar() {
           className="flex items-center gap-3 group focus:outline-none"
         >
           <img
-            src="/logo.png"
+            src="/images/logo.png"
             alt="Orzeh Logo"
             className="h-8 md:h-9 w-auto object-contain group-hover:scale-105 transition-all duration-300"
           />

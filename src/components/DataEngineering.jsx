@@ -139,9 +139,9 @@ function DataEngineering() {
   }
 
   const targetAudiences = [
-    { title: 'Data & AI Teams', desc: 'DevOps and data teams responsible for AI deployment, infrastructure, and analytics pipelines.', img: '/devops.png' },
-    { title: 'AI Startups', desc: 'Startups and founders putting AI products into production who need a robust, clean data stack.', img: '/ai_startup.jpg' },
-    { title: 'Operations Heavy', desc: 'Operations-heavy businesses scaling their data and moving from batch to real-time workflows.', img: '/enterprise.png' }
+    { title: 'Data & AI Teams', desc: 'DevOps and data teams responsible for AI deployment, infrastructure, and analytics pipelines.', img: '/images/devops.png' },
+    { title: 'AI Startups', desc: 'Startups and founders putting AI products into production who need a robust, clean data stack.', img: '/images/ai_startup.jpg' },
+    { title: 'Operations Heavy', desc: 'Operations-heavy businesses scaling their data and moving from batch to real-time workflows.', img: '/images/enterprise.png' }
   ]
 
   const workflowStages = [
@@ -291,7 +291,7 @@ function DataEngineering() {
                   {/* Central Node Orb */}
                   <div className="relative w-14 h-14 rounded-full bg-white shadow-[0_0_20px_rgba(249,115,22,0.25)] flex items-center justify-center z-10 border border-slate-100">
                     <img 
-                      src="/logo.png" 
+                      src="/images/logo.png" 
                       alt="Orzeh Logo" 
                       className="w-9 h-auto object-contain"
                     />

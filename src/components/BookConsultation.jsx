@@ -222,7 +222,7 @@ function BookConsultation() {
             {/* Right Graphic */}
             <div className="animate-on-scroll animate-from-right flex justify-center lg:justify-end lg:-translate-y-12">
               <img 
-                src="/consultation-illustration.png" 
+                src="/images/consultation-illustration.png" 
                 alt="Consultation Illustration" 
                 className="w-full max-w-[500px] h-auto object-contain drop-shadow-xl hover:-translate-y-2 transition-transform duration-500 rounded-2xl mix-blend-multiply"
               />
