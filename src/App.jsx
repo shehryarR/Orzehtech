@@ -2,7 +2,10 @@ import { useState, useEffect } from 'react'
 import Navbar from './components/Navbar.jsx'
 import Homepage from './components/Homepage.jsx'
 import AISecurity from './components/AISecurity.jsx'
-import ErpAiSolutions from './components/ErpAiSolutions.jsx'
+import DigitalTransformation from './components/DigitalTransformation.jsx'
+import VoiceAI from './components/VoiceAI.jsx'
+import AIAutomation from './components/AIAutomation.jsx'
+import AICostOptimization from './components/AICostOptimization.jsx'
 import About from './components/About.jsx'
 import BookConsultation from './components/BookConsultation.jsx'
 import Footer from './components/Footer.jsx'
@@ -20,7 +23,10 @@ function App() {
     '#/': 'Orzeh Technologies builds secure, production-ready AI systems for growing companies: AI security and Wazuh monitoring, data engineering and DevSecOps, and Odoo ERP with custom AI.',
     '#/ai-security': 'Secure your AI systems before production. Orzeh provides AI security audits, Wazuh deployment, DevSecOps for AI, RAG and reliability improvement, and production-readiness support.',
     '#/data-engineering': 'Orzeh builds AI-ready data infrastructure: secure pipelines, real-time and streaming systems, DevSecOps and CI/CD workflows, monitoring, and multi-cloud architecture for growing companies.',
-    '#/erp-ai': 'Orzeh implements Odoo ERP and builds custom AI for growing businesses, helping teams modernize operations, automate workflows, improve reporting, and scale with intelligence.',
+    '#/digital-transformation': 'Orzeh drives digital transformation for growing businesses: Odoo ERP as the foundation, with custom AI that automates workflows, improves reporting, and lifts efficiency and ROI.',
+    '#/voice-ai': 'Orzeh builds Voice AI agents that handle real phone calls, inbound and outbound, for support, sales, and bookings. Human-sounding, CRM-integrated, with WhatsApp and live-agent transfers.',
+    '#/ai-automation': 'Orzeh automates the repetitive work slowing your team down: workflows, document and invoice processing, email and CRM, reporting, and system integrations, built on the right tools or custom.',
+    '#/ai-cost-optimization': 'Orzeh cuts the cost of running AI in production without hurting quality: full usage visibility with Langfuse, plus prompt, model, routing, and caching optimization.',
     '#/about': 'Orzeh Technologies builds secure, production-ready systems across AI security, data engineering, DevSecOps, and ERP + AI for growing businesses: one technical partner for the systems you depend on next.',
     '#/book-consultation': 'Book a consultation with Orzeh Technologies to discuss AI security, data engineering, DevSecOps, ERP implementation, workflow automation, and custom AI for your business.',
     '#/services': 'Explore Orzeh Technologies services across AI security, data engineering, DevSecOps, ERP implementation, custom AI automation, and intelligent business systems.',
@@ -65,6 +71,9 @@ function App() {
   useEffect(() => {
     if (window._isBackNavigation) {
       window._isBackNavigation = false;
+    } else if (currentHash.includes('scrollTo=')) {
+      // Don't force scroll to top if we have a scrollTo parameter
+      return;
     } else {
       // Disable smooth scrolling temporarily to prevent conflict with hash jumps
       document.documentElement.style.scrollBehavior = 'auto';
@@ -103,16 +112,18 @@ function App() {
 
       // Intercept all route links starting with #/
       if (href.startsWith('#/')) {
-        // Only intercept if it's actually changing the route (not an in-page anchor like #/about#team)
-        // For simplicity, we'll intercept all #/ and just force scroll to top
         e.preventDefault()
+        
+        const isScrollTo = href.includes('scrollTo=');
         
         // Disable smooth scroll temporarily
         document.documentElement.style.scrollBehavior = 'auto';
         document.body.style.scrollBehavior = 'auto';
         
-        // Force scroll to top instantly
-        window.scrollTo(0, 0);
+        if (!isScrollTo) {
+          // Force scroll to top instantly
+          window.scrollTo(0, 0);
+        }
         
         // Update the URL without triggering native browser scroll jump
         window.history.pushState(null, '', href);
@@ -120,7 +131,9 @@ function App() {
         window.dispatchEvent(new Event('hashchange'));
 
         setTimeout(() => {
-          window.scrollTo(0, 0); // Double check
+          if (!isScrollTo) {
+            window.scrollTo(0, 0); // Double check
+          }
           document.documentElement.style.scrollBehavior = '';
           document.body.style.scrollBehavior = '';
         }, 50);
@@ -188,20 +201,18 @@ function App() {
       case '#/data-engineering':
         return <DataEngineering />
       case '#/book-consultation':
+      case '#/contact':
         return <BookConsultation />
-      case '#/erp-ai':
-      case '#/erp-ai-solutions':
-        return <ErpAiSolutions />
+      case '#/digital-transformation':
+        return <DigitalTransformation />
+      case '#/voice-ai':
+        return <VoiceAI />
+      case '#/ai-automation':
+        return <AIAutomation />
+      case '#/ai-cost-optimization':
+        return <AICostOptimization />
       case '#/about':
         return <About />
-      case '#/contact':
-        return (
-          <div className="max-w-[1200px] mx-auto px-6 py-32 text-center">
-            <h1 className="text-4xl font-extrabold mb-4">Contact Us</h1>
-            <p className="text-lg text-text-muted mb-8">Please fill out our booking form to schedule a consultation.</p>
-            <a href="#/book-consultation" className="px-6 py-3 bg-brand-orange text-white font-bold rounded-lg hover:bg-brand-gold transition-colors">Book a Consultation</a>
-          </div>
-        )
       default:
         return (
           <div className="max-w-[1200px] mx-auto px-6 py-32 text-center">

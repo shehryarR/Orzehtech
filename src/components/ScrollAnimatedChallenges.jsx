@@ -6,11 +6,11 @@ const ScrollAnimatedChallenges = () => {
       title: 'Manual Overload', 
       desc: 'Teams repeat the same tasks weekly', 
       tag: 'INEFFICIENT', 
-      color: '#ef4444', 
-      bgColor: 'bg-red-50/40',
-      borderColor: 'border-red-100',
-      tagBg: 'bg-red-100/50',
-      tagText: 'text-red-500'
+      color: '#f97316', 
+      bgColor: 'bg-orange-50/40',
+      borderColor: 'border-orange-100',
+      tagBg: 'bg-orange-100/50',
+      tagText: 'text-orange-500'
     },
     { 
       title: 'AI Vulnerability', 
@@ -26,21 +26,21 @@ const ScrollAnimatedChallenges = () => {
       title: 'Data Silos', 
       desc: 'Data scattered across tools and sheets', 
       tag: 'FRAGMENTED', 
-      color: '#0284c7', 
-      bgColor: 'bg-sky-50/40',
-      borderColor: 'border-sky-100',
-      tagBg: 'bg-sky-100/50',
-      tagText: 'text-sky-600'
+      color: '#f97316', 
+      bgColor: 'bg-orange-50/40',
+      borderColor: 'border-orange-100',
+      tagBg: 'bg-orange-100/50',
+      tagText: 'text-orange-500'
     },
     { 
       title: 'Blind Decisions', 
       desc: "Reports outdated before they're read", 
       tag: 'STALE', 
-      color: '#a855f7', 
-      bgColor: 'bg-purple-50/40',
-      borderColor: 'border-purple-100',
-      tagBg: 'bg-purple-100/50',
-      tagText: 'text-purple-500'
+      color: '#f97316', 
+      bgColor: 'bg-orange-50/40',
+      borderColor: 'border-orange-100',
+      tagBg: 'bg-orange-100/50',
+      tagText: 'text-orange-500'
     },
   ];
 

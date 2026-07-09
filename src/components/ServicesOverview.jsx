@@ -400,15 +400,15 @@ function ServicesOverview() {
           <div className="mb-16 max-w-[800px] text-left">
             <span className="text-brand-orange font-mono font-bold tracking-widest text-[13px] uppercase block mb-3">Service Areas</span>
             <h2 className="font-sora font-black text-3xl md:text-5xl leading-tight text-slate-900 mb-5">
-              Three Capabilities, One <span className="hero-gradient-text">Implementation Partner</span>
+              Comprehensive Capabilities, One <span className="hero-gradient-text">Implementation Partner</span>
             </h2>
             <p className="text-lg text-slate-600 leading-relaxed">
-              Companies arrive with different problems: securing AI before launch, fixing shaky data infrastructure, replacing spreadsheets with ERP, or all three over time. The services are structured so you can start where the need is strongest. Each has a dedicated page with full detail; here is the short version.
+              Companies arrive with different problems: securing AI before launch, fixing shaky data infrastructure, digital transformation, or automation. The services are structured so you can start where the need is strongest. Each has a dedicated page with full detail; here is the short version.
             </p>
           </div>
 
           {/* Cards Grid */}
-          <div className="grid md:grid-cols-3 gap-8">
+          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
 
             {/* Card 1: AI Security */}
             <div className="services-capability-card animate-on-scroll animate-from-left" data-delay="100">
@@ -464,7 +464,7 @@ function ServicesOverview() {
               </a>
             </div>
 
-            {/* Card 3: ERP + AI */}
+            {/* Card 3: Digital Transformation */}
             <div className="services-capability-card animate-on-scroll animate-from-right" data-delay="300">
               <div>
                 <div className="card-icon-box">
@@ -473,21 +473,105 @@ function ServicesOverview() {
                     <path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 1 1-2.83 2.83l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-4 0v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 1 1-2.83-2.83l.06-.06a1.65 1.65 0 0 0 .33-1.82 1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1 0-4h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 1 1 2.83-2.83l.06.06a1.65 1.65 0 0 0 1.82.33H9a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 4 0v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 1 1 2.83 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82V9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 0 4h-.09a1.65 1.65 0 0 0-1.51 1z" strokeLinecap="round" strokeLinejoin="round" strokeWidth={2.2}></path>
                   </svg>
                 </div>
-                <h3 className="card-title">ERP + AI Solutions</h3>
+                <h3 className="card-title">Digital Transformation</h3>
                 <p className="card-desc">
-                  Modernize Operations With ERP and Custom AI. Growing businesses outgrow spreadsheets, disconnected apps, and manual reporting. We implement ERP and add custom AI on top, so operations centralize, workflows automate, and reporting actually informs decisions.
+                  Modernize Operations With ERP and Custom AI. Growing businesses outgrow spreadsheets, disconnected apps, and manual reporting. We implement ERP and add custom AI on top.
                 </p>
                 <div className="mb-6">
                   <span className="block text-[10px] font-bold text-slate-400 uppercase tracking-widest mb-2">Key capabilities</span>
-                  <p className="text-xs text-slate-600 leading-relaxed">Odoo implementation, customization, and migration; core and advanced modules; AI inventory prediction; sales and customer-service automation; smart reporting; financial forecasting; training and support.</p>
+                  <p className="text-xs text-slate-600 leading-relaxed">Odoo implementation; core and advanced modules; AI inventory prediction; sales automation; smart reporting; financial forecasting.</p>
                 </div>
                 <div className="mb-6">
                   <span className="block text-[10px] font-bold text-emerald-600 uppercase tracking-widest mb-1">Outcome</span>
-                  <p className="text-xs text-slate-700 font-bold">a move from manual operations to connected, intelligent workflows that are easier to manage and scale.</p>
+                  <p className="text-xs text-slate-700 font-bold">a move from manual operations to connected, intelligent workflows.</p>
                 </div>
               </div>
-              <a href="#/erp-ai-solutions" className="card-link mt-auto">
-                Explore ERP + AI <span>→</span>
+              <a href="#/digital-transformation" className="card-link mt-auto">
+                Explore Digital Transformation <span>→</span>
+              </a>
+            </div>
+
+            {/* Card 4: Voice AI */}
+            <div className="services-capability-card animate-on-scroll animate-from-left" data-delay="400">
+              <div>
+                <div className="card-icon-box">
+                  <svg fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2.2} d="M12 1a3 3 0 0 0-3 3v8a3 3 0 0 0 6 0V4a3 3 0 0 0-3-3z"></path>
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2.2} d="M19 10v2a7 7 0 0 1-14 0v-2"></path>
+                    <line x1="12" y1="19" x2="12" y2="23" strokeWidth={2.2} strokeLinecap="round"></line>
+                    <line x1="8" y1="23" x2="16" y2="23" strokeWidth={2.2} strokeLinecap="round"></line>
+                  </svg>
+                </div>
+                <h3 className="card-title">Voice AI</h3>
+                <p className="card-desc">
+                  Voice AI Agents That Handle Real Phone Calls. We build agents that pick up the phone, make outbound calls, book appointments, and answer customers.
+                </p>
+                <div className="mb-6">
+                  <span className="block text-[10px] font-bold text-slate-400 uppercase tracking-widest mb-2">Key capabilities</span>
+                  <p className="text-xs text-slate-600 leading-relaxed">Inbound & Outbound calls; Appointment Booking; CRM Integration; WhatsApp & Human Transfer.</p>
+                </div>
+                <div className="mb-6">
+                  <span className="block text-[10px] font-bold text-emerald-600 uppercase tracking-widest mb-1">Outcome</span>
+                  <p className="text-xs text-slate-700 font-bold">every call answered and routine work handled without a person.</p>
+                </div>
+              </div>
+              <a href="#/voice-ai" className="card-link mt-auto">
+                Explore Voice AI <span>→</span>
+              </a>
+            </div>
+
+            {/* Card 5: AI Automation */}
+            <div className="services-capability-card animate-on-scroll animate-from-bottom" data-delay="500">
+              <div>
+                <div className="card-icon-box">
+                  <svg fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                    <rect x="2" y="3" width="20" height="14" rx="2" ry="2" strokeWidth={2.2} strokeLinecap="round" strokeLinejoin="round"></rect>
+                    <line x1="8" y1="21" x2="16" y2="21" strokeWidth={2.2} strokeLinecap="round" strokeLinejoin="round"></line>
+                    <line x1="12" y1="17" x2="12" y2="21" strokeWidth={2.2} strokeLinecap="round" strokeLinejoin="round"></line>
+                  </svg>
+                </div>
+                <h3 className="card-title">AI Automation</h3>
+                <p className="card-desc">
+                  Automate the Work That's Slowing Your Team Down. We find repetitive work and automate it across workflows, documents, email and CRM.
+                </p>
+                <div className="mb-6">
+                  <span className="block text-[10px] font-bold text-slate-400 uppercase tracking-widest mb-2">Key capabilities</span>
+                  <p className="text-xs text-slate-600 leading-relaxed">Workflow Automation; Document Processing; CRM & Email routing; System Integrations; AI Agents.</p>
+                </div>
+                <div className="mb-6">
+                  <span className="block text-[10px] font-bold text-emerald-600 uppercase tracking-widest mb-1">Outcome</span>
+                  <p className="text-xs text-slate-700 font-bold">more output from the same team, at lower cost.</p>
+                </div>
+              </div>
+              <a href="#/ai-automation" className="card-link mt-auto">
+                Explore AI Automation <span>→</span>
+              </a>
+            </div>
+
+            {/* Card 6: AI Cost Optimization */}
+            <div className="services-capability-card animate-on-scroll animate-from-right" data-delay="600">
+              <div>
+                <div className="card-icon-box">
+                  <svg fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                    <line x1="12" y1="1" x2="12" y2="23" strokeWidth={2.2} strokeLinecap="round" strokeLinejoin="round"></line>
+                    <path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6" strokeWidth={2.2} strokeLinecap="round" strokeLinejoin="round"></path>
+                  </svg>
+                </div>
+                <h3 className="card-title">AI Cost Optimization</h3>
+                <p className="card-desc">
+                  Cut the Cost of Running AI in Production. We bring your AI running costs under control with full visibility into where the money goes.
+                </p>
+                <div className="mb-6">
+                  <span className="block text-[10px] font-bold text-slate-400 uppercase tracking-widest mb-2">Key capabilities</span>
+                  <p className="text-xs text-slate-600 leading-relaxed">Cost Visibility; Prompt Optimization; Model Routing; Caching; Cost Monitoring via Langfuse.</p>
+                </div>
+                <div className="mb-6">
+                  <span className="block text-[10px] font-bold text-emerald-600 uppercase tracking-widest mb-1">Outcome</span>
+                  <p className="text-xs text-slate-700 font-bold">a leaner setup that delivers the same quality for less.</p>
+                </div>
+              </div>
+              <a href="#/ai-cost-optimization" className="card-link mt-auto">
+                Explore AI Cost Optimization <span>→</span>
               </a>
             </div>
 

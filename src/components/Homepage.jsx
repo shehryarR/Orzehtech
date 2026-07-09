@@ -5,7 +5,6 @@ import { VscAzure } from 'react-icons/vsc'
 import CountUp from './CountUp.jsx'
 import HeroRibbonAnimation from './HeroRibbonAnimation.jsx'
 import ScrollAnimatedChallenges from './ScrollAnimatedChallenges.jsx'
-
 function Homepage() {
   useEffect(() => {
     document.title = "Orzeh Technologies | AI Security, Data Engineering & ERP + AI Solutions"
@@ -67,10 +66,6 @@ function Homepage() {
             
             {/* Centered Copy */}
             <div className="hero-copy">
-              <div className="hero-eyebrow animate-on-scroll animate-zoom-in">
-                <span className="eyebrow-dot" />
-                <span>AI Infrastructure Company</span>
-              </div>
               
               <h1 className="hero-title animate-on-scroll" data-delay="100">
                 Production-Ready AI
@@ -614,60 +609,76 @@ function Homepage() {
             </p>
           </div>
 
-          <div className="comparison-grid">
-            {/* The Hype Approach (Usually Done Style) */}
-            <div className="comparison-card comparison-card-bad animate-on-scroll" data-delay="100">
-              <div className="comparison-header">
-                <h3 className="font-sora font-extrabold text-2xl text-slate-800">
-                  The Hype <span className="font-black text-slate-900">Approach</span>
-                </h3>
+          <div className="max-w-[1000px] mx-auto rounded-[2rem] overflow-hidden border border-slate-200 shadow-[0_20px_60px_-15px_rgba(0,0,0,0.08)] bg-white animate-on-scroll">
+            <div className="flex flex-col md:flex-row">
+              {/* Left Side: The Hype Approach */}
+              <div className="flex-1 p-8 sm:p-12 lg:p-14 bg-slate-50/50">
+                <div className="flex items-center gap-4 mb-10">
+                  <div className="w-12 h-12 rounded-xl bg-slate-200/80 flex items-center justify-center shrink-0">
+                    <svg className="w-6 h-6 text-slate-400" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth="2">
+                      <path strokeLinecap="round" strokeLinejoin="round" d="M6 18L18 6M6 6l12 12" />
+                    </svg>
+                  </div>
+                  <h3 className="text-xl sm:text-2xl font-extrabold text-slate-800 font-sora tracking-tight">
+                    The <span className="text-slate-400">Hype</span> Approach
+                  </h3>
+                </div>
+                <ul className="space-y-6">
+                  {[
+                    'Recommends tools before understanding your business',
+                    "Generic templates that don't fit reality",
+                    'Creates more data silos with disconnected tools',
+                    'Strategy decks that never become infrastructure',
+                    'Leaves you with fragile AI prototypes'
+                  ].map((item, idx) => (
+                    <li key={idx} className="flex items-start gap-4 group">
+                      <span className="shrink-0 w-6 h-6 rounded-full bg-slate-200 text-slate-400 flex items-center justify-center mt-0.5 transition-colors group-hover:bg-red-100 group-hover:text-red-400">
+                        <svg className="w-3.5 h-3.5" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round">
+                          <line x1="18" y1="6" x2="6" y2="18"></line>
+                          <line x1="6" y1="6" x2="18" y2="18"></line>
+                        </svg>
+                      </span>
+                      <span className="text-[15px] font-medium text-slate-500 leading-relaxed transition-colors group-hover:text-slate-700">{item}</span>
+                    </li>
+                  ))}
+                </ul>
               </div>
-              <ul className="comparison-list">
-                {[
-                  'Recommends tools before understanding your business',
-                  "Generic templates that don't fit reality",
-                  'Creates more data silos with disconnected tools',
-                  'Strategy decks that never become infrastructure',
-                  'Leaves you with fragile AI prototypes'
-                ].map((item, idx) => (
-                  <li key={idx} className="flex items-center gap-4">
-                    <span className="flex items-center justify-center w-6 h-6 rounded-full bg-red-50 text-red-500 border border-red-100 shrink-0">
-                      <svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="4" strokeLinecap="round" strokeLinejoin="round">
-                        <line x1="18" y1="6" x2="6" y2="18"></line>
-                        <line x1="6" y1="6" x2="18" y2="18"></line>
-                      </svg>
-                    </span>
-                    <span className="font-medium text-[15px] text-slate-600">{item}</span>
-                  </li>
-                ))}
-              </ul>
-            </div>
 
-            {/* The Orzeh Approach (How We Do It Style) */}
-            <div className="comparison-card comparison-card-good animate-on-scroll" data-delay="200">
-              <div className="comparison-header">
-                <h3 className="font-sora font-extrabold text-2xl text-white">
-                  The Orzeh <span className="text-brand-orange font-black">Approach</span>
-                </h3>
+              {/* Right Side: The Orzeh Approach */}
+              <div className="flex-1 p-8 sm:p-12 lg:p-14 relative bg-[#0a0f1c] overflow-hidden">
+                {/* Sleek Glowing Backgrounds */}
+                <div className="absolute top-0 right-0 w-[400px] h-[400px] bg-brand-orange/15 rounded-full blur-[100px] pointer-events-none transform translate-x-1/3 -translate-y-1/3" />
+                <div className="absolute bottom-0 left-0 w-[300px] h-[300px] bg-amber-500/10 rounded-full blur-[80px] pointer-events-none transform -translate-x-1/4 translate-y-1/4" />
+                
+                <div className="relative z-10 flex items-center gap-4 mb-10">
+                  <div className="w-12 h-12 rounded-xl bg-gradient-to-br from-brand-orange to-brand-gold flex items-center justify-center shrink-0 shadow-[0_0_20px_rgba(249,115,22,0.3)]">
+                    <svg className="w-6 h-6 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth="2.5">
+                      <polyline points="20 6 9 17 4 12" strokeLinecap="round" strokeLinejoin="round" />
+                    </svg>
+                  </div>
+                  <h3 className="text-xl sm:text-2xl font-extrabold text-white font-sora tracking-tight">
+                    The <span className="text-brand-orange">Orzeh</span> Approach
+                  </h3>
+                </div>
+                <ul className="relative z-10 space-y-6">
+                  {[
+                    'Diagnoses where time and data are breaking',
+                    'Custom systems built around your reality',
+                    'Centralized architectures and pipelines',
+                    'Production-ready code and cloud assets',
+                    'Ongoing monitoring and optimization'
+                  ].map((item, idx) => (
+                    <li key={idx} className="flex items-start gap-4 group">
+                      <span className="shrink-0 w-6 h-6 rounded-full bg-brand-orange/20 text-brand-orange border border-brand-orange/30 flex items-center justify-center mt-0.5 transition-all group-hover:bg-brand-orange group-hover:text-white group-hover:shadow-[0_0_12px_rgba(249,115,22,0.5)]">
+                        <svg className="w-3 h-3" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth="4" strokeLinecap="round" strokeLinejoin="round">
+                          <polyline points="20 6 9 17 4 12"></polyline>
+                        </svg>
+                      </span>
+                      <span className="text-[15px] font-medium text-slate-300 leading-relaxed transition-colors group-hover:text-white">{item}</span>
+                    </li>
+                  ))}
+                </ul>
               </div>
-              <ul className="comparison-list">
-                {[
-                  'Diagnoses where time and data are breaking',
-                  'Custom systems built around your reality',
-                  'Centralized architectures and pipelines',
-                  'Production-ready code and cloud assets',
-                  'Ongoing monitoring and optimization'
-                ].map((item, idx) => (
-                  <li key={idx} className="flex items-center gap-4">
-                    <span className="flex items-center justify-center w-6 h-6 rounded-full bg-brand-orange/15 text-brand-orange border border-brand-orange/20 shrink-0">
-                      <svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="4.5" strokeLinecap="round" strokeLinejoin="round">
-                        <polyline points="20 6 9 17 4 12"></polyline>
-                      </svg>
-                    </span>
-                    <span className="font-medium text-[15px] text-slate-300">{item}</span>
-                  </li>
-                ))}
-              </ul>
             </div>
           </div>
         </div>

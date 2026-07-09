@@ -29,8 +29,12 @@ function Footer() {
           <div className="animate-on-scroll animate-zoom-in" data-delay="100">
             <h4 className="footer-heading">Capabilities</h4>
             <ul className="footer-links">
-              <li><a href="#/ai-security">AI Security & Implementation</a></li>
-              <li><a href="#/erp-ai">ERP + AI Solutions</a></li>
+              <li><a href="#/ai-security">AI Security</a></li>
+              <li><a href="#/data-engineering">Data Engineering</a></li>
+              <li><a href="#/digital-transformation">Digital Transformation</a></li>
+              <li><a href="#/voice-ai">Voice AI</a></li>
+              <li><a href="#/ai-automation">AI Automation</a></li>
+              <li><a href="#/ai-cost-optimization">AI Cost Optimization</a></li>
               <li><a href="#/services">All Services</a></li>
             </ul>
           </div>
