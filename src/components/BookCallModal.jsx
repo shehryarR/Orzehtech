@@ -266,10 +266,13 @@ function BookCallModal({ isOpen, onClose }) {
                       }`}
                     >
                       <option value="">Select a service area</option>
-                      <option value="AI Security & Implementation">AI Security & Implementation</option>
-                      <option value="Data Engineering & DevSecOps">Data Engineering & DevSecOps</option>
-                      <option value="ERP + AI Solutions">ERP + AI Solutions</option>
-                      <option value="Other / Consultation review">Other / Consultation review</option>
+                      <option value="AI Security">AI Security</option>
+                      <option value="Data Engineering">Data Engineering</option>
+                      <option value="Digital Transformation">Digital Transformation</option>
+                      <option value="Voice AI">Voice AI</option>
+                      <option value="AI Automation">AI Automation</option>
+                      <option value="AI Cost Optimization">AI Cost Optimization</option>
+                      <option value="Not sure yet">Not sure yet</option>
                     </select>
                     {errors.helpArea && <p className="text-[10px] text-red-500 font-bold mt-1 font-mono">{errors.helpArea}</p>}
                   </div>

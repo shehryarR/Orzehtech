@@ -125,9 +125,12 @@ function BookConsultation() {
   }, []);
 
   const serviceAreas = [
-    { value: 'AI Security & Implementation', label: 'AI Security & Implementation' },
-    { value: 'Data Engineering & DevSecOps', label: 'Data Engineering & DevSecOps' },
-    { value: 'ERP + AI Solutions', label: 'ERP + AI Solutions' },
+    { value: 'AI Security', label: 'AI Security' },
+    { value: 'Data Engineering', label: 'Data Engineering' },
+    { value: 'Digital Transformation', label: 'Digital Transformation' },
+    { value: 'Voice AI', label: 'Voice AI' },
+    { value: 'AI Automation', label: 'AI Automation' },
+    { value: 'AI Cost Optimization', label: 'AI Cost Optimization' },
     { value: 'Not sure yet', label: 'Not sure yet' }
   ];
 
@@ -286,7 +289,7 @@ function BookConsultation() {
                 </ul>
               </div>
               <button 
-                onClick={() => scrollToForm('AI Security & Implementation')} 
+                onClick={() => scrollToForm('AI Security')} 
                 className="w-full py-4 border-2 border-brand-orange text-brand-orange font-bold font-sora text-[13px] uppercase tracking-wider rounded-xl hover:bg-brand-orange hover:text-white hover:shadow-lg hover:shadow-brand-orange/20 transition-all duration-300 mt-auto flex items-center justify-center gap-2 cursor-pointer group/btn"
               >
                 <span>Book AI Security</span>
@@ -322,7 +325,7 @@ function BookConsultation() {
                 </ul>
               </div>
               <button 
-                onClick={() => scrollToForm('Data Engineering & DevSecOps')} 
+                onClick={() => scrollToForm('Data Engineering')} 
                 className="w-full py-4 border-2 border-brand-orange text-brand-orange font-bold font-sora text-[13px] uppercase tracking-wider rounded-xl hover:bg-brand-orange hover:text-white hover:shadow-lg hover:shadow-brand-orange/20 transition-all duration-300 mt-auto flex items-center justify-center gap-2 cursor-pointer group/btn"
               >
                 <span>Book Data Infrastructure</span>
@@ -357,7 +360,7 @@ function BookConsultation() {
                 </ul>
               </div>
               <button 
-                onClick={() => scrollToForm('ERP + AI Solutions')} 
+                onClick={() => scrollToForm('Digital Transformation')} 
                 className="w-full py-4 border-2 border-brand-orange text-brand-orange font-bold font-sora text-[13px] uppercase tracking-wider rounded-xl hover:bg-brand-orange hover:text-white hover:shadow-lg hover:shadow-brand-orange/20 transition-all duration-300 mt-auto flex items-center justify-center gap-2 cursor-pointer group/btn"
               >
                 <span>Book ERP + AI</span>
