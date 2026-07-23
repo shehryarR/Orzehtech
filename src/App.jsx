@@ -20,7 +20,7 @@ function App() {
 
   // Meta descriptions per route — from reference documents
   const metaDescriptions = {
-    '#/': 'Orzeh Technologies builds secure, production-ready AI systems for growing companies: AI security and Wazuh monitoring, data engineering and DevSecOps, and Odoo ERP with custom AI.',
+    '#/': 'Orzeh unites AI, security, ERP, and automation under one team, so businesses of any size run leaner and safer with real ROI. Secure, AI-enabling digital transformation.',
     '#/ai-security': 'Secure your AI systems before production. Orzeh provides AI security audits, Wazuh deployment, DevSecOps for AI, RAG and reliability improvement, and production-readiness support.',
     '#/data-engineering': 'Orzeh builds AI-ready data infrastructure: secure pipelines, real-time and streaming systems, DevSecOps and CI/CD workflows, monitoring, and multi-cloud architecture for growing companies.',
     '#/digital-transformation': 'Orzeh drives digital transformation for growing businesses: Odoo ERP as the foundation, with custom AI that automates workflows, improves reporting, and lifts efficiency and ROI.',

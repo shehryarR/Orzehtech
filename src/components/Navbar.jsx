@@ -88,7 +88,13 @@ function Navbar() {
 
   // Determine if the current page has a dark hero section
   const currentRoute = currentHash.split('?')[0]
-  const isDarkHero = currentRoute === '#/voice-ai' || currentRoute === '#/ai-automation' || currentRoute === '#/ai-cost-optimization'
+  const isDarkHero = 
+    currentRoute === '#/voice-ai' || 
+    currentRoute === '#/ai-automation' || 
+    currentRoute === '#/ai-cost-optimization' ||
+    currentRoute === '#/' || 
+    currentRoute === '' || 
+    currentRoute === '#'
   const isTransparentAndDark = !isSticky && isDarkHero
 
   return (
